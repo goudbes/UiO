@@ -1,0 +1,15 @@
+Communication with server:
+
+I have decided to use 4 bytes for get_job message to the server like this:
+
+* 1st byte: char 'G' which is an indicator that the client asking for
+  jobs.
+
+* 2nd-4th byte: Used to store number of jobs. 0 in case we want
+  all. Max is then 2^24=16777215 jobs.
+
+When client wants to send a message to the server that it terminates
+normally (without error) it sends 1 byte the char 'T'.
+
+When the client sends a message to the server that it terminates due
+to error I send 1 byte with the char 'E'.
