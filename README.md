@@ -27,5 +27,8 @@
 ##### [INF3110 - Programming languages (Autumn 2017)](https://github.com/goudbes/UiO/tree/master/INF3110)
 ###### ROBOL interpreter written in Java.
 
+##### [INF3331 - Problem solving with high-level languages (Autumn 2017)](https://github.com/goudbes/UiO/tree/master/INF3331)
+###### Coursework in Python and Bash.
+
 ##### [INF2270 - Computer architecture (Spring 2018)](https://github.com/goudbes/UiO/tree/master/INF2270)
 ###### Coursework in Logisim, a graphical tool for designing and simulating logic circuits, and assembly.
