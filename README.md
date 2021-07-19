@@ -23,3 +23,6 @@
 
 ##### [INF1060 - Introduction to operating systems and data communications (Autumn 2017)](https://github.com/goudbes/UiO/tree/master/INF1060)
 ###### Coursework and home exam written in C.
+
+##### [INF2270 - Computer architecture (Spring 2018)](https://github.com/goudbes/UiO/tree/master/INF2270)
+###### Coursework in Logisim, a graphical tool for designing and simulating logic circuits, and assembly.
