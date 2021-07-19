@@ -1,0 +1,8 @@
+|E| = Number of edges
+|V| = Number of vertices (nodes)
+
+findCycles: O(|E|+|V|), worst case visiting all edges and nodes
+eventNodeGraph: O(|E|), visiting all the edges
+topologicalSort: O(|E|)
+calculateCompletionTimes: O(|E|)
+

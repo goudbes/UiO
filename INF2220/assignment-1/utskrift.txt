@@ -1,0 +1,93 @@
+Please type a word: achiev
+The word wasn't found
+------------------------------------
+Similar words that exist in the dictionary
+* achive
+* achier
+* achieve
+
+Number of words found: 3
+Time used to generate similar words (nano): 179187
+
+Please type a word: achiese
+The word wasn't found
+------------------------------------
+Similar words that exist in the dictionary
+* achieve
+* achiest
+
+Number of words found: 2
+Time used to generate similar words (nano): 129579
+
+Please type a word: achievee
+The word wasn't found
+------------------------------------
+Similar words that exist in the dictionary
+* achieved
+* achiever
+* achieves
+* achieve
+* achieve
+
+Number of words found: 5
+Time used to generate similar words (nano): 87242
+
+Please type a word: ahcieve
+The word wasn't found
+------------------------------------
+Similar words that exist in the dictionary
+* achieve
+
+Number of words found: 1
+Time used to generate similar words (nano): 91091
+
+Please type a word: q
+------------------------------------
+Statistics
+
+Max depth of the binary tree is: 37
+
+Nodes per each depth of the tree:
+
+Depth: 0 number of nodes: 1
+Depth: 1 number of nodes: 2
+Depth: 2 number of nodes: 4
+Depth: 3 number of nodes: 8
+Depth: 4 number of nodes: 16
+Depth: 5 number of nodes: 32
+Depth: 6 number of nodes: 64
+Depth: 7 number of nodes: 121
+Depth: 8 number of nodes: 218
+Depth: 9 number of nodes: 383
+Depth: 10 number of nodes: 628
+Depth: 11 number of nodes: 990
+Depth: 12 number of nodes: 1513
+Depth: 13 number of nodes: 2208
+Depth: 14 number of nodes: 2949
+Depth: 15 number of nodes: 3889
+Depth: 16 number of nodes: 4772
+Depth: 17 number of nodes: 5671
+Depth: 18 number of nodes: 6251
+Depth: 19 number of nodes: 6689
+Depth: 20 number of nodes: 6692
+Depth: 21 number of nodes: 6450
+Depth: 22 number of nodes: 5884
+Depth: 23 number of nodes: 5101
+Depth: 24 number of nodes: 4244
+Depth: 25 number of nodes: 3254
+Depth: 26 number of nodes: 2395
+Depth: 27 number of nodes: 1789
+Depth: 28 number of nodes: 1177
+Depth: 29 number of nodes: 705
+Depth: 30 number of nodes: 429
+Depth: 31 number of nodes: 236
+Depth: 32 number of nodes: 138
+Depth: 33 number of nodes: 60
+Depth: 34 number of nodes: 25
+Depth: 35 number of nodes: 9
+Depth: 36 number of nodes: 3
+
+The average depth of all the nodes: 19.0
+
+Alphabetically first word in the dictionary: abactinally
+Alphabetically last word in the dictionary: darndests
