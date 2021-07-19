@@ -18,5 +18,8 @@
 ##### [INF2440 - Efficient parallel programming (Spring 2017)](https://github.com/goudbes/UiO/tree/master/INF2440)
 ###### Coursework with a focus on parallel programming using Java, namely java.util.concurrent. Techniques to adapting sequential algorithms into parallel. 
 
+##### [INF2810 - Functional programming (Spring 2017)](https://github.com/goudbes/UiO/tree/master/INF2810)
+###### Coursework written in Scheme.
+
 ##### [INF1060 - Introduction to operating systems and data communications (Autumn 2017)](https://github.com/goudbes/UiO/tree/master/INF1060)
 ###### Coursework and home exam written in C.

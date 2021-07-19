@@ -1,0 +1,17 @@
+Noen hint:
+Det er helt i orden (og meningen) å se på «Jury», «jury», «jury,», «jury.», og så videre som forskjellige ord. Det er slike «ord»/tokens dere får som råmateriale fra read-corpus, så det er bare å jobbe videre med disse «ordene» i modellen.
+ 
+Konseptuelt kan man se på en språkmodell som en tabell, der nøklene er strenger og verdiene er undertabeller. Hvis man skal sjekke frekvensen/sannsynligheten for ordparet <"jury", "said"> slår man opp det første ordet "jury" i hovedtabellen, og slår så opp det andre ordet "said" i undertabellen.
+Hver undertabell kan være uavhengige av hverandre, altså ha forskjellige ordnøkler fra de andre undertabellene.
+ 
+I «setningslistene» fra read-corpus vil den første strengen i hver liste være "<s>" og den siste strengen være "</s>". Hvis en av setningslistene er ("<s>" "The" "jury" "is" "out." "</s>") skal det føre til at diss 5 ordparene registreres når lm-train! tar for seg denne setningslisten:
+<"<s>", "The">, <"The", "jury">, <"jury", "is">, <"is", "out.">, <"out." "</s>">
+ 
+Etter å ha trent opp en språkmodell med lm-train! bør dermed  "<s>" være en av nøklene i hovedtabellen. (lm-lookup-bigram lm "<s>" "The") bør returnere antall ganger "The" forekommer som første ordet i en setning.
+"</s>" bør derimot ikke være en nøkkel i hovedtabellen (for det vil jo ikke forekomme som det første ordet i et ordpar), men bør være en nøkkel i alle undertabellene, slik at for eksempel (lm-lookup-bigram lm "jury." "</s>") returnerer antall forekomster av "jury." i slutten av en setning.
+ 
+Det er flere måter å bygge opp den underliggende datastrukturen for tabell-datatypen man bruker i hovedtabellen og undertabellene.
+For en "naiv" løsning kan man bruke den listebaserte tabell-implementasjonen fra forelesning 9. Husk at man må lagre «total frekvens» for et ord (antall ganger ordet forekommer som første ord i et ordpar) et sted, og kanskje totalt antall ord N i en modell for å kunne beregne sannsynligheten 1/N for ukjente ordpar (som diskutert i oblig-teksten). Det går an å lagre disse tingene «utenfor» selve tabellene.
+En mer effektiv implementasjon får man ved å bruke binære søketrær. Både hovedtabellen og undertabellene vil da bygges opp som binære trær som man raskt kan søke seg frem i. Man vil da ha bruk for en innebygd prosedyre som string<=? for å sammenligne strenger alfabetisk og finne ut hvor noder i treet skal plasseres ved innsetting, og for å søke seg frem til et bestemt ord ved oppslag.
+Nodene i «hovedtreet» bør inneholde 3 ting: nøkkelordet (for det første ordet i et ordpar), total frekvens for ordet, og en peker til det binære søketreet som representerer undertabellen til dette ordet.
+Nodene i hvert «undertre» bør inneholde 2 ting: nøkkelordet (for det andre ordet i et ordpar) og frekvens/sannsynlighet for at dette ordet etterfølger et bestemt ord i hovedtabellen.
