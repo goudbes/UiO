@@ -6,6 +6,9 @@
 ##### [INF1010 - Object-oriented programming (Spring 2016)](https://github.com/goudbes/UiO/tree/master/INF1010)
 ###### Coursework written in Java. A continuation of the course INF1000. 
 
+##### [INF1300 - Introduction to databases (Autumn 2016)](https://github.com/goudbes/UiO/tree/master/INF1300)
+###### Coursework written in SQL.
+
 ##### [INF2100 - Programming project (Autumn 2016)](https://github.com/goudbes/UiO/tree/master/INF2100)
 ###### Pascal2016 compiler written in Java.
 
